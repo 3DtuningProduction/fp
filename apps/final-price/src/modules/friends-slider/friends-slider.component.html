@@ -1,0 +1,19 @@
+<div class="ourCars">
+    <div class="ourCars-title ourCars-title2">Our friends</div>
+    <div class="ourCars-subTitle">Lorem Ipsum is simply dummy text of the printing and<br> typesetting industry. </div>
+
+    <swiper class="ourCars-slider flex" [config]='categorySwiperOptions'>
+        <ng-template swiperSlide *ngFor="let item of categories">
+            <div class='car-wrapper'>
+                <div class="car">
+                    <div class="car-img">
+                        <img [src]="item.img" alt="">
+                    </div>
+                    <div class="car-title">
+                        {{item.title}}
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>

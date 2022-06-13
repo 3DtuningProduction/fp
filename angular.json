@@ -1,8 +1,7 @@
 {
-  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
-  "version": 2,
-  "projects": {
-    "final-price": "apps/final-price",
-    "final-price-e2e": "apps/final-price-e2e"
-  }
+    "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+        "final-price": "apps/final-price"
+    }
 }

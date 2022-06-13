@@ -1,0 +1,39 @@
+<div class="main-banner" *ngIf="type === 'main'">
+    <div class="main-banner-left">
+        <div class="main-banner-title">Way better than a rental car</div>
+        <div class="main-banner-sub-title">Book unforgettable cars from trusted hosts around the world</div>
+    </div>
+    <div class="main-banner-right">
+        <img src="/assets/main-banner-right2.png" alt="">
+    </div>
+    <div class="main-banner-bottom">
+        <div class="selectBlock">
+            <div class="selectBlock-label">
+                <img src="/assets/icons/where.svg" alt="">
+                Where
+            </div>
+            <select>
+                <option value disabled selected>Choose a location</option>
+                <option>Los Angeles, CA</option>
+                <option>Los Angeles, CA2</option>
+                <option>Los Angeles, CA3</option>
+                <option>Los Angeles, CA4</option>
+            </select>
+        </div>
+        <div class="selectBlock">
+            <div class="selectBlock-label">
+                <img src="/assets/icons/calendar.svg" alt="">
+                From
+            </div>
+            <select>
+                <option value disabled selected>Pick-up date</option>
+                <option>Los Angeles, CA</option>
+                <option>Los Angeles, CA2</option>
+                <option>Los Angeles, CA3</option>
+                <option>Los Angeles, CA4</option>
+            </select>
+        </div>
+
+        <button [routerLink]="['search']">Search</button>
+    </div>
+</div>

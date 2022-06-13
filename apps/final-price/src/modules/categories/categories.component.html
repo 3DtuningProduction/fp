@@ -1,0 +1,21 @@
+<div class="ourCars">
+    <div class="ourCars-title">Our cars</div>
+    <div class="ourCars-subTitle">Choose from thousands of cars in over 5,500 cities across<br> the US, Canada and the UK.</div>
+
+    <swiper class="ourCars-slider flex" [config]='categorySwiperOptions'>
+        <ng-template swiperSlide *ngFor="let item of categories">
+            <div class='car-wrapper'>
+                <div class="car">
+                    <div class="car-img">
+                        <a [routerLink]="['search']" [queryParams]="{ category: 'cat' }">
+                            <img [src]="item.img" alt="">
+                        </a>
+                    </div>
+                    <div class="car-title">
+                        <a [routerLink]="['search']" [queryParams]="{ category: 'cat' }">{{item.title}}</a>
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </swiper>
+</div>
